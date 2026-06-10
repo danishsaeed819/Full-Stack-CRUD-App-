@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center py-5">
+    <h1 class="display-5 fw-semibold mb-3">Full-Stack CRUD Application</h1>
+    <p class="lead text-muted col-lg-8 mx-auto">
+        ASP.NET Core MVC with Entity Framework Core, SQL Server, and Bootstrap.
+        Server-rendered product management with a normalized schema and layered architecture.
+    </p>
+    <div class="d-flex justify-content-center gap-2 mt-4">
+        <a asp-controller="Products" asp-action="Index" class="btn btn-primary btn-lg">View Products</a>
+        <a asp-controller="Products" asp-action="Create" class="btn btn-outline-primary btn-lg">Add Product</a>
+    </div>
+</div>
+
+<div class="row g-4 mt-2">
+    <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">MVC + SSR</h5>
+                <p class="card-text text-muted">Razor views with Bootstrap for responsive, server-side rendered CRUD pages.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">EF Core Migrations</h5>
+                <p class="card-text text-muted">Version-controlled schema changes with a normalized Category–Product relationship.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Layered Architecture</h5>
+                <p class="card-text text-muted">Controllers delegate to services, which use repositories for data access.</p>
+            </div>
+        </div>
+    </div>
+</div>
